@@ -4,6 +4,10 @@
 		<?php echo bloginfo('name'); ?>
 		|
 		All Rights Reserved 
+		<span class="socialIcons">
+		
+		</span>
+		|
     </p>
 </footer>
 

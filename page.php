@@ -9,6 +9,14 @@
 
           <?php the_content(); ?>
 
+          <div class="stuff">
+            
+            <?php if ( get_field("home_title") ) : ?>
+              <?php the_field("home_title") ?>
+            <?php endif; ?>
+
+          </div>
+
         <?php endwhile; // end the loop?>
       </div> <!-- /,content -->
 
