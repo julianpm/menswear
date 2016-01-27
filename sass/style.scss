@@ -1,4 +1,4 @@
-/*
+ /*
 * Theme Name: HackerYou Starter Theme
 * Theme URI: http://hackeryou.com;
 * Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
@@ -27,19 +27,46 @@ body {
 	color: #333;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul, li{
+	padding:0;
+	margin:0;
+}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	border:1px solid green;
 }
 
 .content {
-	float: left;
+	border:1px solid red;
 	width: 65%;
 	margin-right: 5%;
 }
 
+.flex{
+	display:flex;
+	flex-wrap:wrap;
+}
+
 .full {
 	width: 100%;
+}
+
+.siteNav{
+	border:2px solid blue;
+}
+
+.mainMenu{
+	border:1px solid red;
+	list-style:none;
+	width: 50%;
+	margin:0 auto;
+	justify-content:space-around;
+}
+
+h2{
+	border:1px solid red;
 }
 
 
