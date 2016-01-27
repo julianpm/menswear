@@ -13,11 +13,27 @@
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
+$cream:#FAF9F5;
+
+@mixin fontSize($number){
+	font-size:$number * 1px;
+	font-size:($number / 10) * 1rem;
+}
+
 /*
 ====================================
 Default Styling
 ====================================
 */
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	@include fontSize(16);
+}
 
 img {
 	max-width: 100%;
@@ -35,14 +51,12 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	border:1px solid green;
 }
 
-.content {
-	border:1px solid red;
-	width: 65%;
-	margin-right: 5%;
-}
+// .content {
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
 
 .flex{
 	display:flex;
@@ -54,22 +68,34 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 
 .siteNav{
-	border:2px solid blue;
+	// background: $cream;
 }
 
 .mainMenu{
-	border:1px solid red;
 	list-style:none;
-	width: 50%;
+	width: 60%;
 	margin:0 auto;
-	justify-content:space-around;
+	padding:1% 0;
+	justify-content:space-between;
+	a{
+		color:black;
+		padding:5px 0 3px 0;
+		border-bottom:2px solid transparent;
+		transition:1s;
+		&:hover{
+			border-bottom:2px solid black;
+		}
+	}
 }
 
-h2{
+footer{
 	border:1px solid red;
+	p{
+		border:1px solid green;
+		text-align:center;
+		@include fontSize(10);
+	}
 }
-
-
 
 
 
