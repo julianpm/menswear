@@ -25,6 +25,8 @@ $navFont: 'Quicksand';
 
 
 
+
+
 /*
 ====================================
 Default Styling
@@ -75,7 +77,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 
 
 
-
 // NAVIGATION
 
 header section{
@@ -97,11 +98,11 @@ header section{
 	justify-content:space-between;
 	a{
 		color:black;
-		padding:5px 0 3px 0;
-		border-bottom:2px solid transparent;
+		padding:5px 2px 3px 2px;
+		border-bottom:1px solid transparent;
 		transition:0.75s;
 		&:hover{
-			border-bottom:2px solid black;
+			border-bottom:1px solid black;
 		}
 	}
 }
@@ -124,6 +125,25 @@ header .search{
 
 
 
+// MAIN
+
+.gallery{
+	border:1px solid black;
+	margin:3% 0;
+	// width: 50%;
+}
+
+.homeGallery{
+	border:1px solid green;
+	list-style:none;
+	width: 50%;
+	margin:0 auto;
+	justify-content:space-around;
+}
+
+
+
+
 
 // FOOTER
 
@@ -131,11 +151,11 @@ footer{
 	// background: $cream;
 	p{
 		border-top:1px solid black;
-		width: 28%;
+		width: 31%;
 		text-align:center;
 		padding:1% 0;
 		margin:0 auto;
-		@include fontSize(12);
+		@include fontSize(14);
 	}
 }
 
