@@ -14,12 +14,16 @@
 @import 'comments';
 @import 'footer';
 
-$cream:#FAF9F5;
+$cream:#F5F2E9;
+
+$navFont: 'Quicksand';
 
 @mixin fontSize($number){
 	font-size:$number * 1px;
 	font-size:($number / 10) * 1rem;
 }
+
+
 
 /*
 ====================================
@@ -51,7 +55,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 .container {
 	max-width: 92%;
 	margin: 0 auto;
-	border:1px solid black;
 }
 
 // .content {
@@ -68,6 +71,22 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 	width: 100%;
 }
 
+
+
+
+
+
+// NAVIGATION
+
+header section{
+	// background: $cream;
+}
+
+.siteNav, footer{
+	font-family:$navFont;
+	text-transform:lowercase;
+}
+
 .siteNav{
 	justify-content:space-between;
 }
@@ -80,7 +99,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 		color:black;
 		padding:5px 0 3px 0;
 		border-bottom:2px solid transparent;
-		transition:1s;
+		transition:0.75s;
 		&:hover{
 			border-bottom:2px solid black;
 		}
@@ -88,29 +107,13 @@ h1, h2, h3, h4, h5, h6, p, ul, li{
 }
 
 .mainMenu{
-	border:1px solid green;
 	width: 50%;
 }
 
 .secondaryMenu{
-	border:1px solid green;
-	width: 20%;
-}
-
-footer{
-	border:1px solid black;
-	p{
-		text-align:center;
-		padding:1% 0;
-		@include fontSize(12);
-	}
-}
-
-.socialIcons{
+	width: 12%;
 	a{
-		padding:3px;
-		margin-right:5px;
-		color:black;
+		padding-top:4px;
 	}
 }
 
@@ -118,6 +121,30 @@ header .search{
 	display:none;
 }
 
+
+
+
+
+// FOOTER
+
+footer{
+	// background: $cream;
+	p{
+		border-top:1px solid black;
+		width: 28%;
+		text-align:center;
+		padding:1% 0;
+		margin:0 auto;
+		@include fontSize(12);
+	}
+}
+
+.socialIcons{
+	a{
+		padding:4px 4px 4px 7px;
+		color:black;
+	}
+}
 
 
 
