@@ -19,10 +19,22 @@
 <body <?php body_class(); ?>>
 
 <header>
-    <nav class="siteNav">
+  <div class="container">
+    
+    <nav class="siteNav flex">
+      
       <ul class="mainMenu flex">
         <?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'primary', 'items_wrap'=> '%3$s' ) ); ?>
       </ul> <!-- END OF MAINMENU -->
+    
+      <ul class="secondaryMenu flex">
+        <?php wp_nav_menu( array( 'container' => false, 'theme_location' => 'secondary', 'items_wrap'=> '%3$s') ); ?>
+        <?php get_template_part( 'searchform'); ?>
+
+      </ul> <!-- END OF SECONDARY MENU -->
+    
     </nav> <!-- END OF SITEMENU -->
+  
+  </div> <!-- END OF CONTAINER -->
 </header><!--/.header-->
 
